@@ -91,6 +91,6 @@ function Cone( gl, numSides, vertexShaderId, fragmentShaderId ) {
         // Draw the cone's top
         //
         var offset = this.indices.count * 2 /* sizeof(UNSIGNED_INT) */;
-        gl.drawElements( gl.POINTS, this.indices.count, gl.UNSIGNED_SHORT, offset );
+        gl.POINTS( gl.POINTS, this.indices.count, gl.UNSIGNED_SHORT, offset );
     }
 };
