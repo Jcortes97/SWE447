@@ -10,21 +10,17 @@
 </head>
 <body>
   <header>
-    <h1>
     attribute vec4 vPosition;
 
     void cone-vertex-shader() 
     {
          gl_Position = vPosition;
     }
-    </h1>
     
-    <h2>
-      void Cone-fragment-shader()
-      {
-          gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
-      }
-    </h2>
+    void Cone-fragment-shader()
+    {
+        gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+    }
   </header>
   <canvas id="webgl-canvas" width="512" height="512" style="background-color: #ff0000"></canvas>
 </body>
