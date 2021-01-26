@@ -6,20 +6,27 @@
   <script src="https://github.com/Jcortes97/SWE447/blob/main/Common/Assignment3/Common/initShaders.js"></script>
   <script src="https://github.com/Jcortes97/SWE447/blob/main/Common/Assignment3/Common/Cone.js"></script>
   <script src="cone.js"></script> 
-  
-  attribute vec4 vPosition;
 
-  void main() 
-  {
-       gl_Position = vPosition;
-  }
   
-  void main()
-  {
-      gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
-  }
 </head>
 <body>
+  <header>
+    <h1>
+    attribute vec4 vPosition;
+
+    void main() 
+    {
+         gl_Position = vPosition;
+    }
+    </h1>
+    
+    <h2>
+      void main()
+      {
+          gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+      }
+    </h2>
+  </header>
   <canvas id="webgl-canvas" width="512" height="512" style="background-color: #ff0000"></canvas>
 </body>
 </html>
