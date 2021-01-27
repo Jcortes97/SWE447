@@ -2,7 +2,7 @@ var gl = null;
 
 function init() {
     var canvas = document.getElementById( "webgl-canvas" );
-
+    cone = new Cone(gl, 7)
     gl = WebGLUtils.setupWebGL( canvas );
 
     if ( !gl ) {
@@ -14,7 +14,7 @@ function init() {
 }
 
 function render() {
-    cone = new Cone(gl, 7)
+    cone.render();
 }
 
 window.onload = init;
